@@ -13,6 +13,17 @@ An AI-powered web application that classifies news articles based on **political
 
 ---
 
+## [Demo](https://capstone-frontend-1-calculator5329-ethans-projects-becdb732.vercel.app/)
+
+
+---
+
+## Prequisites 
+ - Windows 10/11
+ - Python 3.11.7
+
+---
+
 ## 🛠️ How to Run Locally
 
 ### 1️⃣ Clone the Repository
@@ -21,7 +32,7 @@ git clone https://github.com/your-username/news-bias-analyzer.git
 cd news-bias-analyzer
 ```
 
-### 2️⃣ Setup the Backend with Python 3.11.7
+### 2️⃣ Setup the Backend
 ```bash
 cd backend
 python -m venv venv --prompt "news-bias-env"
@@ -42,7 +53,7 @@ uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 You will be prompted to enter an OpenAI API Key. This key is required to process news articles using embeddings.
 If you don't have an API key, create one at [OpenAI Platform](https://platform.openai.com/).
 
-###5️⃣ Setup and Run the Frontend
+### 5️⃣ Setup and Run the Frontend
 ```bash
 cd frontend
 npm install
