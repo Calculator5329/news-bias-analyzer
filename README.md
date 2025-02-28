@@ -9,7 +9,6 @@ An AI-powered web application that classifies news articles based on **political
 - Utilizes **Deep Neural Networks** for high-accuracy predictions.
 - Leverages **OpenAI's embedding API** to process article text.
 - Provides a **user-friendly web interface** using **FastAPI (backend) and Next.js (frontend)**.
-- Scalable and efficient deployment with cloud support.
 
 ---
 
