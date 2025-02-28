@@ -1,10 +1,10 @@
-# 📰 News Bias Analyzer
+# News Bias Analyzer
 
 An AI-powered web application that classifies news articles based on **political bias (Left, Neutral, Right)** and **authenticity (Fake vs. Real News)** using **machine learning and OpenAI's embedding API**.
 
 ---
 
-## 🚀 Features
+## Features
 - Classifies articles as **Fake News vs. Real News** and determines **political bias**.
 - Utilizes **Deep Neural Networks** for high-accuracy predictions.
 - Leverages **OpenAI's embedding API** to process article text.
@@ -16,26 +16,36 @@ An AI-powered web application that classifies news articles based on **political
 ## 🛠️ How to Run Locally
 
 ### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/your-username/news-bias-analyzer.git
 cd news-bias-analyzer
+```
 
 ### 2️⃣ Setup the Backend with Python 3.11.7
+```bash
 cd backend
 python -m venv venv --prompt "news-bias-env"
 venv\Scripts\activate
+```
 
 ### 3️⃣ Install Dependencies
 Once the virtual environment is activated, install all dependencies:
+```bash
 pip install --upgrade pip
 pip install -r requirements.txt
+```
 
 ### 4️⃣ Run the Backend
+```bash
 uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-💡 You will be prompted to enter an OpenAI API Key. This key is required to process news articles using embeddings.
-If you don't have an API key, create one at OpenAI.
+```
+You will be prompted to enter an OpenAI API Key. This key is required to process news articles using embeddings.
+If you don't have an API key, create one at [OpenAI Platform](https://platform.openai.com/).
 
 ###5️⃣ Setup and Run the Frontend
+```bash
 cd frontend
 npm install
 npm run dev
+```
 Then open http://localhost:3000 in your browser.
