@@ -1,6 +1,6 @@
 # News Bias Analyzer
 
-An AI-powered web application that classifies news articles based on **political bias (Left, Neutral, Right)** and **authenticity (Fake vs. Real News)** using **machine learning and OpenAI's embedding API**.
+An AI-powered web application that classifies news articles based on **political bias (Left, Neutral, Right)** and **authenticity (Fake vs. Real News)** using **machine learning and OpenAI's embedding API**. Access demo [here](https://capstone-frontend-1-calculator5329-ethans-projects-becdb732.vercel.app/).
 
 ---
 
@@ -10,11 +10,6 @@ An AI-powered web application that classifies news articles based on **political
 - Leverages **OpenAI's embedding API** to process article text.
 - Provides a **user-friendly web interface** using **FastAPI (backend) and Next.js (frontend)**.
 - Scalable and efficient deployment with cloud support.
-
----
-
-## [Demo](https://capstone-frontend-1-calculator5329-ethans-projects-becdb732.vercel.app/)
-
 
 ---
 
