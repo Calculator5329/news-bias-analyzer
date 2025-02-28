@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #121212;  /* Darker gray */
+  --foreground: #e0e0e0;  /* Light text */
+  --border-color: #333;   /* Softer borders */
+  --input-bg: #1a1a1a;    /* Dark input background */
+  --input-text: #ffffff;  /* White text */
+  --primary-blue: #2563eb; /* Button color */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #181818;
+    --foreground: #f0f0f0;
+    --border-color: #444;
+    --input-bg: #222;
+    --input-text: #fff;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Inter", sans-serif; /* Use Inter or similar sleek fonts */
+}
+
+textarea {
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--border-color);
+  font-size: 16px;
+  padding: 10px;
+}
