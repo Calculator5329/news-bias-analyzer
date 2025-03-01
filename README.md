@@ -55,5 +55,6 @@ npm run dev
 ```
 Then open http://localhost:3000 in your browser.
 
+---
 
 Datasets sourced from: [Fake News Detection Dataset from Kaggle](https://www.kaggle.com/datasets/vishakhdapat/fake-news-detection?select=fake_and_real_news.csv) and [Article Bias Prediction Dataset from GitHub](https://github.com/ramybaly/Article-Bias-Prediction)
