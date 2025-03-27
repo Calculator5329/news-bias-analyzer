@@ -36,13 +36,6 @@ An AI-powered web application that classifies news articles based on **political
 
 ---
 
-## 📊 Datasets
-
-- [Fake News Detection Dataset (Kaggle)](https://www.kaggle.com/datasets/vishakhdapat/fake-news-detection?select=fake_and_real_news.csv)  
-- [Article Bias Prediction Dataset (GitHub)](https://github.com/ramybaly/Article-Bias-Prediction)
-
----
-
 ## 🪜 How to Run Locally
 
 ### 1️⃣ Clone the Repository
@@ -79,3 +72,8 @@ npm run dev
 Then open `http://localhost:3000` in your browser.
 
 ---
+
+## Acknowledgements
+
+- [Fake News Detection Dataset (Kaggle)](https://www.kaggle.com/datasets/vishakhdapat/fake-news-detection?select=fake_and_real_news.csv)  
+- [Article Bias Prediction Dataset (GitHub)](https://github.com/ramybaly/Article-Bias-Prediction)
