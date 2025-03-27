@@ -36,7 +36,7 @@ An AI-powered web application that classifies news articles based on **political
 
 ---
 
-## 🪜 How to Run Locally
+## How to Run Locally
 
 ### 1️⃣ Clone the Repository
 ```bash
