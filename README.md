@@ -32,7 +32,7 @@ An AI-powered web application that classifies news articles based on **political
 | Frontend     | Next.js, React                     |
 | Backend      | FastAPI (Python)                   |
 | ML/NLP       | OpenAI Embeddings, DNN (Tensorflow)|
-| Hosting      | Vercel, Render                     |
+| Hosting      | Vercel, Railway                    |
 
 ---
 
