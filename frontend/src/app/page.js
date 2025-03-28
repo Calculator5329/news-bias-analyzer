@@ -16,11 +16,14 @@ export default function Home() {
     setResult(null);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/analyze", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ text: article }),
-      });
+      const response = await fetch(
+        "https://capstone-backend-production-8af9.up.railway.app/analyze",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ text: article }),
+        }
+      );
 
       if (!response.ok) throw new Error("Failed to analyze article");
 
@@ -39,7 +42,7 @@ export default function Home() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen w-full p-5 text-white">
+    <div className="flex flex-col items-center min-h-screen w-full p-5 mt-40 text-white">
       <h1 className="text-2xl font-semibold mb-4">Political Bias Analyzer</h1>
 
       {/* Article Input Box */}
@@ -68,7 +71,7 @@ export default function Home() {
             <>
               <h2 className="text-lg font-bold text-blue-400">Results:</h2>
               <p className="mt-2">
-                <strong>Bias:</strong> {result.bias} 
+                <strong>Bias:</strong> {result.bias}
                 <span className="ml-2 text-gray-400">
                   ({(result.confidence * 100).toFixed(2)}%)
                 </span>

@@ -1,0 +1,15 @@
+# Node.js Frontend
+node_modules/
+.next/
+out/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.env*
+.DS_Store
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# System files
+.DS_Store

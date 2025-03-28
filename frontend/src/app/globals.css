@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --background: #121212;  /* Darker gray */
-  --foreground: #e0e0e0;  /* Light text */
-  --border-color: #333;   /* Softer borders */
-  --input-bg: #1a1a1a;    /* Dark input background */
-  --input-text: #ffffff;  /* White text */
+  --background: #121212; /* Darker gray */
+  --foreground: #e0e0e0; /* Light text */
+  --border-color: #333; /* Softer borders */
+  --input-bg: #1a1a1a; /* Dark input background */
+  --input-text: #ffffff; /* White text */
   --primary-blue: #2563eb; /* Button color */
 }
 
@@ -33,4 +33,78 @@ textarea {
   border: 1px solid var(--border-color);
   font-size: 16px;
   padding: 10px;
+}
+.top-bar {
+  background: transparent; /* Removed quotes */
+  width: 100%; /* Make it take full width */
+  max-width: calc(100%); /* Adjust max-width if needed, considering padding */
+  margin-top: 0.5rem;
+  /* margin-bottom: 1.5rem; */ /* Removed bottom margin to keep it closer to top */
+  display: flex;
+  align-items: center;
+  z-index: 10; /* Ensure it's above content */
+  position: relative; /* Needed for absolute positioning of avatar */
+  height: 60px; /* Give the top bar a defined height */
+}
+
+.avatar-wrapper {
+  /* Using this to position the link */
+  background: transparent;
+  position: absolute;
+  left: 1rem; /* Align with top-bar padding */
+  top: 0;
+  bottom: 0;
+  display: flex; /* Use flex to center vertically */
+  align-items: center; /* Use flex to center vertically */
+  height: 100%;
+  /* padding-left: 1rem; */ /* Removed padding, handled by left position */
+}
+
+.avatar-link {
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: relative; /* Keep relative for transform */
+  /* top: 50%; */ /* Removed, handled by flex on wrapper */
+  /* transform: translateY(-50%); */ /* Removed, handled by flex on wrapper */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInAvatar 0.6s ease-out both; /* Make sure you define fadeInAvatar if you use it */
+}
+
+/* Add a simple fade-in animation if needed */
+@keyframes fadeInAvatar {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.avatar-link:hover {
+  transform: scale(1.1); /* Simplified hover transform */
+}
+
+.profile-avatar {
+  position: relative; /* Changed from absolute, the link handles positioning */
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--primary-blue);
+  box-shadow: 0 0 6px rgba(0, 24, 77, 0.6);
+  /* margin: auto 0; */ /* Removed, handled by link */
+  /* margin-left: 0.25rem; */ /* Removed, handled by link/wrapper */
+}
+
+.profile-avatar:hover {
+  box-shadow: 0 0 10px var(--primary-blue); /* Use variable */
+}
+
+/* Ensure Next/Image fill works correctly */
+.profile-avatar img {
+  object-fit: fill;
 }
