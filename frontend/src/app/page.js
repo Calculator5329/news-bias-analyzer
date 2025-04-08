@@ -31,7 +31,7 @@ export default function Home() {
       setResult(data);
     } catch (error) {
       console.error("Error:", error);
-      setResult({ error: "Failed to analyze article. Please try again." });
+      setResult({ error: "Sorry! My free trial credits ran out for the backend! Currently migrating to an Azure backend, estimated completion by April 9th." });
     } finally {
       setLoading(false);
     }
